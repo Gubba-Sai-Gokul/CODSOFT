@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(20, 20, 68);
+    height: 75px;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+/* nav ul li a:hover{
+    font-size: 1.2rem;
+    color: rgb(157, 92, 218);
+} */
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+
+}
+
+.leftsection {
+    width: 35%;
+    margin: 60px;
+    font-size: 3rem;
+}
+
+.rightsection {
+    width: 30%;
+}
+
+.rightsection img {
+    width: 30vw;
+    height: auto;
+    margin: 30px 0;
+}
+
+.purple {
+    color: rgb(157, 92, 218);
+}
+
+#element {
+    color: rgb(157, 92, 218);
+    ;
+}
+
+hr {
+    border: 0;
+    background-color: rgb(157, 92, 218);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.secs {
+    font-size: 2.5rem;
+    margin: 25px;
+}
+
+.aboutinfo {
+    font-size: 1.5rem;
+    margin: 65px;
+}
+
+.secondsection P {
+    text-align: center;
+    margin: 10px 0px;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.button {
+    background-color: rgb(157, 92, 218);
+    width: 8vw;
+    height: 8vh;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 46%;
+    border-radius: 10%;
+    /* transition: all 0s linear 0s;
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-delay: 0s;
+    transition-timing-function: linear;  */
+    box-shadow: 4px 4px 0 rgb(114, 55, 169);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:active {
+    /* background-color:  rgb(89, 29, 145); */
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 0 0 0 rgb(114, 55, 169);
+
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.edu {
+    width: 30vw;
+    height: 30vh;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+}
+
+.skills {
+    width: 50vw;
+    height: 50vh;
+    /* background-color: beige; */
+    position: relative;
+   
+
+
+}
+
+.outer {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    /* border: 2px solid blue; */
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+    
+}
+
+#number{
+    font-size: 18px;
+    font-weight: 600px;
+   padding: 20px;
+}
+#number1{
+    font-size: 16px;
+    font-weight: 600px;
+    padding: 20px;
+}
+svg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+}
+#c1{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim1 2s linear forwards;
+
+}
+@keyframes anim1 {
+    100%{
+    stroke-dashoffset: 118;
+    }   
+}
+#c2{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+
+}
+@keyframes anim2 {
+    100%{
+    stroke-dashoffset: 140;
+    }   
+}
+#c3{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+
+}
+@keyframes anim3 {
+    100%{
+    stroke-dashoffset: 140;
+    }   
+}
+#c4{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim4 2s linear forwards;
+
+}
+@keyframes anim4 {
+    100%{
+    stroke-dashoffset: 188;
+    }   
+}
+#c5{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim5 2s linear forwards;
+
+}
+@keyframes anim5 {
+    100%{
+    stroke-dashoffset: 118;
+    }   
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+.projects{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projects1{
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pro1{
+    width: 20%;
+    height: 50%;
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+.pro1:hover {
+    width: 22%;
+    height: 52%;
+
+}
+#img1{
+    width: 60%;
+    height: 120%;
+    border-radius: 15%;
+
+}
+#img2{
+    width: 50%;
+    height: 120%;
+    border-radius: 15%;
+
+}
+#img4{
+    width: 80%;
+    height: 120%;
+    border-radius: 15%;
+
+}
+#img5{
+    width: 65%;
+    height: 120%;
+    border-radius: 15%;
+
+}
+.title{
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.tcontent{
+    color: black;
+    padding: 2px;
+    font-size: 1rem;
+}
+#contact{
+    display: flex;
+    flex-direction: row;
+}
+.contact-form{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.labels{
+    width: 20px 0px;
+    padding: 10px 0px;
+    font-size: 1.3rem;
+    font-weight: 50;
+    color: white;
+}
+.inp{
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 2px;
+
+}
+.contact-form button{
+    width: 90px;
+    height: 40px;
+    margin: 0px 80px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: rgb(157, 92, 218);
+}
+.h{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 25px 0px;
+}
+.social-links{
+    width: 50%;
+    height: 50%;
+
+    /* background: white; */
+}
+.social-links ul li{
+    text-decoration: none;
+    color: black;
+    position: relative; 
+    margin: 10px 0px;
+    padding: 10px 0px;   
+}
+.social-links ul{
+    text-decoration: none;
+}
+
+.social-links ul li a{
+    text-decoration: none;
+    /* color: white; */
+    position: relative;    
+}
